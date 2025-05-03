@@ -92,4 +92,8 @@ footer{
     nav ul.verMenu{
         display: flex;
     }
+    nav .logo{
+        font-size: 4vw;
+        color: rgb(255, 187, 0);
+    }
 }
