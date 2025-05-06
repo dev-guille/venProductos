@@ -4,8 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-    <h1>Bienvenido al Panel de Control</h1>
+    <header>
+        <nav>
+            <div class="logo">VenProductos</div>
+            <ul>
+                <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
+            </ul>
+            <!-- Con el div y los span crearemos un icono de tipo hamburguesa -->
+            <div class="hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Bienvenido al Dashboard</h1>
+            <p>Has iniciado sesión correctamente</p>
+        </section>
+    </main>
+
+    <script src="../../js/script.js"></script>
+    <script src="../../js/logout.js"></script>
 </body>
 </html>
