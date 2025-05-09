@@ -21,6 +21,10 @@ header{
     background-color: rgb(33, 75, 201);
     color: white;
     padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 20;
 }
 nav{
     display: flex;
@@ -59,7 +63,7 @@ nav ul li a:hover{
 /* Estilos para el main */
 main{
     max-width: 1100px;
-    margin: 30px auto;
+    margin: 80px auto 0px;
     padding: 20px;
     animation: entrada 1s;
 }
