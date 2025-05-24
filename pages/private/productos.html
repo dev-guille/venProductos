@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Productos</title>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/productos.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">VenProductos</div>
+        <ul>
+          <li><a href="dashboard.html">Panel Principal</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
+        </ul>
+        <!-- Con el div y los span crearemos un icono de tipo hamburguesa -->
+        <div class="hamburguesa">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Productos</h1>
+        <div class="contenedor-productos">
+          <div class="producto">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHxdg2OCc0sz-zPSOpr0hpCRhZIiq4XLJw3g&s"
+              alt=""
+            />
+            <h3>Cable THHN #12 color rojo</h3>
+            <p>Q 3.75</p>
+            <button onclick="agregarAlCarrito(1)">Agregar al carrito</button>
+          </div>
+
+          <div class="producto">
+            <img
+              src="https://elarenal.com.gt/cdn/shop/products/cable-negro_e4ef1e0a-391b-408a-81b9-f630afe0efca.jpg?v=1636546794"
+              alt=""
+            />
+            <h3>Cable THHN #12 color negro</h3>
+            <p>Q 3.75</p>
+            <button onclick="agregarAlCarrito(2)">Agregar al carrito</button>
+          </div>
+        </div>
+        <div id="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-productos"></ul>
+            <p><strong>Total:</strong> <span id="total">0</span></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="../../js/carrito.js"></script>
+    <script src="../../js/script.js"></script>
+    <script src="../../js/logout.js"></script>
+  </body>
+</html>
